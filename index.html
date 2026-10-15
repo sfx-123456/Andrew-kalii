@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10100f">
+  <title>Andrewmole | Kali Room Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#home" class="brand"><span class="logo">A</span><span>ANDREW<span class="gold">MOLE</span><small>KALI ROOM BOOKING</small></span></a>
+  <a class="nav-link" href="#book">Book a room <span>↗</span></a>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="eyebrow"><i></i> PRIVATE ROOM • BY RESERVATION</p>
+      <h1>Your time.<br><em>Your space.</em></h1>
+      <p class="lead">Choose your room, select your time, and send a booking request directly to Andrewmole. Simple, private, and easy to arrange.</p>
+      <div class="actions"><a href="#book" class="btn dark">Reserve a room <span>↘</span></a><a href="#rates" class="under-link">View rates</a></div>
+      <div class="hero-bottom"><span>01 / ROOM RESERVATIONS</span><span>WHATSAPP BOOKING</span></div>
+    </div>
+    <div class="hero-image">
+      <img src="images/andrew-cream-saree.png" alt="Andrewmole reference photo">
+      <div class="image-caption"><span>ANDREWMOLE</span><strong>Make it your moment.</strong></div>
+    </div>
+  </section>
+
+  <section class="rates section" id="rates">
+    <div class="section-head"><div><p class="eyebrow">CLEAR PRICING</p><h2>Choose your <em>time.</em></h2></div><p>Select a duration and room type in the booking form to see the estimated total.</p></div>
+    <div class="rate-grid">
+      <article class="rate-card"><span class="tag">SHORT STAY</span><h3>30 minutes</h3><p class="amount">₹300</p><p class="muted">A short private-room session.</p><button class="rate-btn" data-duration="30" type="button">Select 30 minutes <span>↗</span></button></article>
+      <article class="rate-card main-rate"><span class="tag">EXTENDED STAY</span><h3>1 hour</h3><p class="amount">₹1,000</p><p class="muted">More time, at your pace.</p><button class="rate-btn" data-duration="60" type="button">Select 1 hour <span>↗</span></button></article>
+    </div>
+    <div class="room-note"><div class="room-symbol">✳</div><div><strong>Choose your comfort</strong><p><b>Non-AC room</b> is the standard rate. <b>AC room costs an extra ₹200</b> per booking.</p></div></div>
+  </section>
+
+  <section class="gallery section" id="gallery">
+    <div class="section-head"><div><p class="eyebrow">A LOOK AT THE VIBE</p><h2>Photo <em>gallery.</em></h2></div><p>Reference photos provided for the Andrewmole website.</p></div>
+    <div class="photos">
+      <figure class="photo-wide"><img src="images/andrew-poster-look.png" alt="Andrewmole cream and gold look"><figcaption>01 / CREAM & GOLD</figcaption></figure>
+      <figure><img src="images/andrew-black-saree.png" alt="Andrewmole black and gold look"><figcaption>02 / BLACK & GOLD</figcaption></figure>
+      <figure><img src="images/andrew-pink-saree.png" alt="Andrewmole pink traditional look"><figcaption>03 / SOFT PINK</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="booking section" id="book">
+    <div class="booking-info">
+      <p class="eyebrow">ROOM RESERVATION</p>
+      <h2>Make your<br><em>booking.</em></h2>
+      <p>Choose your preferred date and time. Your details will be placed into a WhatsApp message so Andrewmole can check availability and confirm.</p>
+      <div class="contact"><span>↗</span><div><small>CALL / WHATSAPP</small><a href="tel:+917012742170">7012742170</a></div></div>
+      <div class="contact"><span>◎</span><div><small>INSTAGRAM</small><a href="https://www.instagram.com/a__d__w__._?srtk=MWtnbjMybXVlYTJqZg==" target="_blank" rel="noopener">Open @a__d__w__._</a></div></div>
+    </div>
+    <form id="bookingForm" class="form">
+      <div class="form-head"><strong>BOOKING REQUEST</strong><span>01 — DETAILS</span></div>
+      <label for="guestName">Your name</label>
+      <input id="guestName" name="guestName" placeholder="Enter your name" required>
+      <div class="columns">
+        <div><label for="duration">Duration</label><select id="duration" name="duration"><option value="30" data-price="300">30 minutes · ₹300</option><option value="60" data-price="1000">1 hour · ₹1,000</option></select></div>
+        <div><label for="roomType">Room type</label><select id="roomType" name="roomType"><option value="Non-AC" data-extra="0">Non-AC · +₹0</option><option value="AC" data-extra="200">AC · +₹200</option></select></div>
+      </div>
+      <div class="columns">
+        <div><label for="bookingDate">Preferred date</label><input id="bookingDate" type="date" required></div>
+        <div><label for="bookingTime">Preferred start time</label><input id="bookingTime" type="time" required></div>
+      </div>
+      <label for="people">Number of guests</label>
+      <select id="people" name="people"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select>
+      <label for="notes">Extra requests <span class="optional">(optional)</span></label>
+      <textarea id="notes" rows="3" placeholder="Any questions or requests?"></textarea>
+      <div class="total"><div><span>ESTIMATED TOTAL</span><small id="summary">30 minutes · Non-AC room</small></div><strong id="total">₹300</strong></div>
+      <button type="submit" class="btn dark submit">Send booking request on WhatsApp <span>↗</span></button>
+      <p class="fine-print">This is a request, not a confirmed reservation. Please wait for Andrewmole to confirm availability and the final details.</p>
+    </form>
+  </section>
+</main>
+
+<footer><a href="#home" class="brand"><span class="logo">A</span><span>ANDREW<span class="gold">MOLE</span><small>KALI ROOM BOOKING</small></span></a><span class="footer-note">YOUR SPACE. YOUR TIME.</span><a href="tel:+917012742170">7012742170</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
